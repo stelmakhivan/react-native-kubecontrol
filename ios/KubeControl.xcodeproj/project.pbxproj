@@ -12,14 +12,14 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		143BD448F56516C4CD5FA7BB /* libPods-KubeControl-KubeControlTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7490C6E8A6416881E1A4F /* libPods-KubeControl-KubeControlTests.a */; };
-		149A0BE41744769A3EB7ADDB /* libPods-KubeControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2F53C835E22ACA4215E78A /* libPods-KubeControl.a */; };
-		16A7B53DF7C953406768E2AD /* libPods-KubeControl-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF14BC9D2F572F600A04C067 /* libPods-KubeControl-tvOSTests.a */; };
+		24B3A26E171E364DE9E7458C /* libPods-KubeControl-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F0DE2D8E30B7BA66BC0D1F /* libPods-KubeControl-tvOS.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* KubeControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* KubeControlTests.m */; };
-		697D9C2C99608346626D6759 /* libPods-KubeControl-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3291E7FD5948E6216E12214B /* libPods-KubeControl-tvOS.a */; };
+		63B6783CF8F70D157EC6B53D /* libPods-KubeControl-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86782B8A81E1B6AACB6057BB /* libPods-KubeControl-tvOSTests.a */; };
+		6F33742E11A3E1734B811D49 /* libPods-KubeControl-KubeControlTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DD481EE693A80A4D9377DC /* libPods-KubeControl-KubeControlTests.a */; };
+		710F4B7645C090101AAAE57F /* libPods-KubeControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB37A6C6DAB9DAC1C6C24EA9 /* libPods-KubeControl.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +44,8 @@
 		00E356EE1AD99517003FC87E /* KubeControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KubeControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* KubeControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KubeControlTests.m; sourceTree = "<group>"; };
+		00F5BCE128AB60628673A3BB /* Pods-KubeControl-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubeControl-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-KubeControl-tvOSTests/Pods-KubeControl-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		106F866B8B3F4EEBD1055D1C /* Pods-KubeControl-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubeControl-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-KubeControl-tvOSTests/Pods-KubeControl-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* KubeControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KubeControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = KubeControl/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = KubeControl/AppDelegate.m; sourceTree = "<group>"; };
@@ -51,22 +53,20 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = KubeControl/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = KubeControl/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = KubeControl/main.m; sourceTree = "<group>"; };
-		17834EDC96531E73EC56532C /* Pods-KubeControl-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubeControl-tvOS.release.xcconfig"; path = "Target Support Files/Pods-KubeControl-tvOS/Pods-KubeControl-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		17F0DE2D8E30B7BA66BC0D1F /* libPods-KubeControl-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KubeControl-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* KubeControl-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KubeControl-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* KubeControl-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KubeControl-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3291E7FD5948E6216E12214B /* libPods-KubeControl-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KubeControl-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		54909BBF19A76224B7224836 /* Pods-KubeControl-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubeControl-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-KubeControl-tvOS/Pods-KubeControl-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		71A46F33E949D511698C690E /* Pods-KubeControl-KubeControlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubeControl-KubeControlTests.release.xcconfig"; path = "Target Support Files/Pods-KubeControl-KubeControlTests/Pods-KubeControl-KubeControlTests.release.xcconfig"; sourceTree = "<group>"; };
-		76A510B66862B7B97A128713 /* Pods-KubeControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubeControl.debug.xcconfig"; path = "Target Support Files/Pods-KubeControl/Pods-KubeControl.debug.xcconfig"; sourceTree = "<group>"; };
-		8CF7490C6E8A6416881E1A4F /* libPods-KubeControl-KubeControlTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KubeControl-KubeControlTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9866162A5370013CDA6E2A8B /* Pods-KubeControl-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubeControl-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-KubeControl-tvOSTests/Pods-KubeControl-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		BF14BC9D2F572F600A04C067 /* libPods-KubeControl-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KubeControl-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE2F53C835E22ACA4215E78A /* libPods-KubeControl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KubeControl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D17188CA738D75F619E43DAF /* Pods-KubeControl-KubeControlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubeControl-KubeControlTests.debug.xcconfig"; path = "Target Support Files/Pods-KubeControl-KubeControlTests/Pods-KubeControl-KubeControlTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DC288344188C62A0A5B61D43 /* Pods-KubeControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubeControl.release.xcconfig"; path = "Target Support Files/Pods-KubeControl/Pods-KubeControl.release.xcconfig"; sourceTree = "<group>"; };
+		30DD481EE693A80A4D9377DC /* libPods-KubeControl-KubeControlTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KubeControl-KubeControlTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BB4CA469972B53638B91A63 /* Pods-KubeControl-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubeControl-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-KubeControl-tvOS/Pods-KubeControl-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		86782B8A81E1B6AACB6057BB /* libPods-KubeControl-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KubeControl-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AABD9FC040121B07E22429D0 /* Pods-KubeControl-KubeControlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubeControl-KubeControlTests.release.xcconfig"; path = "Target Support Files/Pods-KubeControl-KubeControlTests/Pods-KubeControl-KubeControlTests.release.xcconfig"; sourceTree = "<group>"; };
+		BB37A6C6DAB9DAC1C6C24EA9 /* libPods-KubeControl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KubeControl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E03F688E25D40FAF776437D9 /* Pods-KubeControl-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubeControl-tvOS.release.xcconfig"; path = "Target Support Files/Pods-KubeControl-tvOS/Pods-KubeControl-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		E0BEA26733F1CAE50A466F93 /* Pods-KubeControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubeControl.debug.xcconfig"; path = "Target Support Files/Pods-KubeControl/Pods-KubeControl.debug.xcconfig"; sourceTree = "<group>"; };
+		EAA9613628F6259D17CC9160 /* Pods-KubeControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubeControl.release.xcconfig"; path = "Target Support Files/Pods-KubeControl/Pods-KubeControl.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		FE0D36C404235F682B97108C /* Pods-KubeControl-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubeControl-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-KubeControl-tvOSTests/Pods-KubeControl-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		F445D3FBC2F5546410CF6B33 /* Pods-KubeControl-KubeControlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubeControl-KubeControlTests.debug.xcconfig"; path = "Target Support Files/Pods-KubeControl-KubeControlTests/Pods-KubeControl-KubeControlTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				143BD448F56516C4CD5FA7BB /* libPods-KubeControl-KubeControlTests.a in Frameworks */,
+				6F33742E11A3E1734B811D49 /* libPods-KubeControl-KubeControlTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				149A0BE41744769A3EB7ADDB /* libPods-KubeControl.a in Frameworks */,
+				710F4B7645C090101AAAE57F /* libPods-KubeControl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				697D9C2C99608346626D6759 /* libPods-KubeControl-tvOS.a in Frameworks */,
+				24B3A26E171E364DE9E7458C /* libPods-KubeControl-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16A7B53DF7C953406768E2AD /* libPods-KubeControl-tvOSTests.a in Frameworks */,
+				63B6783CF8F70D157EC6B53D /* libPods-KubeControl-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +141,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				CE2F53C835E22ACA4215E78A /* libPods-KubeControl.a */,
-				8CF7490C6E8A6416881E1A4F /* libPods-KubeControl-KubeControlTests.a */,
-				3291E7FD5948E6216E12214B /* libPods-KubeControl-tvOS.a */,
-				BF14BC9D2F572F600A04C067 /* libPods-KubeControl-tvOSTests.a */,
+				BB37A6C6DAB9DAC1C6C24EA9 /* libPods-KubeControl.a */,
+				30DD481EE693A80A4D9377DC /* libPods-KubeControl-KubeControlTests.a */,
+				17F0DE2D8E30B7BA66BC0D1F /* libPods-KubeControl-tvOS.a */,
+				86782B8A81E1B6AACB6057BB /* libPods-KubeControl-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -164,7 +164,7 @@
 				00E356EF1AD99517003FC87E /* KubeControlTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				9F8D77C67059B3A37ECD0B20 /* Pods */,
+				E0A0CCC79CB0D4E6E5C7DCDA /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -182,17 +182,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9F8D77C67059B3A37ECD0B20 /* Pods */ = {
+		E0A0CCC79CB0D4E6E5C7DCDA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				76A510B66862B7B97A128713 /* Pods-KubeControl.debug.xcconfig */,
-				DC288344188C62A0A5B61D43 /* Pods-KubeControl.release.xcconfig */,
-				D17188CA738D75F619E43DAF /* Pods-KubeControl-KubeControlTests.debug.xcconfig */,
-				71A46F33E949D511698C690E /* Pods-KubeControl-KubeControlTests.release.xcconfig */,
-				54909BBF19A76224B7224836 /* Pods-KubeControl-tvOS.debug.xcconfig */,
-				17834EDC96531E73EC56532C /* Pods-KubeControl-tvOS.release.xcconfig */,
-				9866162A5370013CDA6E2A8B /* Pods-KubeControl-tvOSTests.debug.xcconfig */,
-				FE0D36C404235F682B97108C /* Pods-KubeControl-tvOSTests.release.xcconfig */,
+				E0BEA26733F1CAE50A466F93 /* Pods-KubeControl.debug.xcconfig */,
+				EAA9613628F6259D17CC9160 /* Pods-KubeControl.release.xcconfig */,
+				F445D3FBC2F5546410CF6B33 /* Pods-KubeControl-KubeControlTests.debug.xcconfig */,
+				AABD9FC040121B07E22429D0 /* Pods-KubeControl-KubeControlTests.release.xcconfig */,
+				4BB4CA469972B53638B91A63 /* Pods-KubeControl-tvOS.debug.xcconfig */,
+				E03F688E25D40FAF776437D9 /* Pods-KubeControl-tvOS.release.xcconfig */,
+				106F866B8B3F4EEBD1055D1C /* Pods-KubeControl-tvOSTests.debug.xcconfig */,
+				00F5BCE128AB60628673A3BB /* Pods-KubeControl-tvOSTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -205,10 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "KubeControlTests" */;
 			buildPhases = (
-				CCD2FA4C55C9D0B8AA3588EB /* [CP] Check Pods Manifest.lock */,
+				6AFE02E37386B417D521CB9C /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				2A0F9C5848FA23DC78724D9F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,12 +225,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "KubeControl" */;
 			buildPhases = (
-				5F92F56D6F5466DC14AB9696 /* [CP] Check Pods Manifest.lock */,
+				EDF5A8FB016747BC071C0198 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				276422BBFDE3D095BE5A8D2B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,7 +246,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "KubeControl-tvOS" */;
 			buildPhases = (
-				190BAE37BD4A93EF9547F624 /* [CP] Check Pods Manifest.lock */,
+				BE7261AD089097735D91791E /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -264,7 +266,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "KubeControl-tvOSTests" */;
 			buildPhases = (
-				D403A19D0A507EA3DE738E06 /* [CP] Check Pods Manifest.lock */,
+				156DE2A1B7A3E9BE135DB411 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -375,7 +377,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		190BAE37BD4A93EF9547F624 /* [CP] Check Pods Manifest.lock */ = {
+		156DE2A1B7A3E9BE135DB411 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -390,11 +392,47 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KubeControl-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-KubeControl-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		276422BBFDE3D095BE5A8D2B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KubeControl/Pods-KubeControl-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KubeControl/Pods-KubeControl-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A0F9C5848FA23DC78724D9F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KubeControl-KubeControlTests/Pods-KubeControl-KubeControlTests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KubeControl-KubeControlTests/Pods-KubeControl-KubeControlTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
@@ -411,29 +449,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		5F92F56D6F5466DC14AB9696 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KubeControl-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CCD2FA4C55C9D0B8AA3588EB /* [CP] Check Pods Manifest.lock */ = {
+		6AFE02E37386B417D521CB9C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -455,7 +471,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D403A19D0A507EA3DE738E06 /* [CP] Check Pods Manifest.lock */ = {
+		BE7261AD089097735D91791E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -470,7 +486,29 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KubeControl-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-KubeControl-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDF5A8FB016747BC071C0198 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KubeControl-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -582,7 +620,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D17188CA738D75F619E43DAF /* Pods-KubeControl-KubeControlTests.debug.xcconfig */;
+			baseConfigurationReference = F445D3FBC2F5546410CF6B33 /* Pods-KubeControl-KubeControlTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -590,7 +628,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = KubeControlTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -605,12 +643,12 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71A46F33E949D511698C690E /* Pods-KubeControl-KubeControlTests.release.xcconfig */;
+			baseConfigurationReference = AABD9FC040121B07E22429D0 /* Pods-KubeControl-KubeControlTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = KubeControlTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -625,7 +663,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76A510B66862B7B97A128713 /* Pods-KubeControl.debug.xcconfig */;
+			baseConfigurationReference = E0BEA26733F1CAE50A466F93 /* Pods-KubeControl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -652,7 +690,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC288344188C62A0A5B61D43 /* Pods-KubeControl.release.xcconfig */;
+			baseConfigurationReference = EAA9613628F6259D17CC9160 /* Pods-KubeControl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -673,7 +711,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54909BBF19A76224B7224836 /* Pods-KubeControl-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 4BB4CA469972B53638B91A63 /* Pods-KubeControl-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -695,13 +733,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17834EDC96531E73EC56532C /* Pods-KubeControl-tvOS.release.xcconfig */;
+			baseConfigurationReference = E03F688E25D40FAF776437D9 /* Pods-KubeControl-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -723,13 +761,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9866162A5370013CDA6E2A8B /* Pods-KubeControl-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 106F866B8B3F4EEBD1055D1C /* Pods-KubeControl-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -756,7 +794,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE0D36C404235F682B97108C /* Pods-KubeControl-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 00F5BCE128AB60628673A3BB /* Pods-KubeControl-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -828,7 +866,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
@@ -881,7 +919,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
