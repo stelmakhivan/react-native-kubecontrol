@@ -1,3 +1,3 @@
 # React Native KubeControl
 
-Install all dependecies and follow [this instructions](https://reactnative.dev/docs/environment-setup)
+Install all dependecies with `yarn` or `npm` and follow [this instructions](https://reactnative.dev/docs/environment-setup)
