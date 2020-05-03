@@ -10,9 +10,16 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-community/masked-view": "^0.1.10",
     "react": "16.13.1",
     "react-native": "0.63.0-rc.0",
+    "react-native-gesture-handler": "^1.6.1",
+    "react-native-reanimated": "^1.8.0",
+    "react-native-router-flux": "^4.2.0",
+    "react-native-safe-area-context": "^0.7.3",
+    "react-native-screens": "^2.7.0",
     "react-native-svg": "^12.1.0",
+    "react-navigation": "^4.3.9",
     "victory-native": "^34.1.0"
   },
   "devDependencies": {

@@ -236,6 +236,8 @@ PODS:
     - React-cxxreact (= 0.63.0-rc.0)
     - React-jsi (= 0.63.0-rc.0)
   - React-jsinspector (0.63.0-rc.0)
+  - react-native-safe-area-context (0.7.3):
+    - React
   - React-RCTActionSheet (0.63.0-rc.0):
     - React-Core/RCTActionSheetHeaders (= 0.63.0-rc.0)
   - React-RCTAnimation (0.63.0-rc.0):
@@ -296,6 +298,14 @@ PODS:
     - React-Core (= 0.63.0-rc.0)
     - React-cxxreact (= 0.63.0-rc.0)
     - React-jsi (= 0.63.0-rc.0)
+  - RNCMaskedView (0.1.10):
+    - React
+  - RNGestureHandler (1.6.1):
+    - React
+  - RNReanimated (1.8.0):
+    - React
+  - RNScreens (2.7.0):
+    - React
   - RNSVG (12.1.0):
     - React
   - Yoga (1.14.0)
@@ -339,6 +349,7 @@ DEPENDENCIES:
   - React-jsi (from `/Users/user/Documents/KubeControl/node_modules/react-native/ReactCommon/jsi`)
   - React-jsiexecutor (from `/Users/user/Documents/KubeControl/node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `/Users/user/Documents/KubeControl/node_modules/react-native/ReactCommon/jsinspector`)
+  - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - React-RCTActionSheet (from `/Users/user/Documents/KubeControl/node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `/Users/user/Documents/KubeControl/node_modules/react-native/Libraries/NativeAnimation`)
   - React-RCTBlob (from `/Users/user/Documents/KubeControl/node_modules/react-native/Libraries/Blob`)
@@ -349,6 +360,10 @@ DEPENDENCIES:
   - React-RCTText (from `/Users/user/Documents/KubeControl/node_modules/react-native/Libraries/Text`)
   - React-RCTVibration (from `/Users/user/Documents/KubeControl/node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/turbomodule/core (from `/Users/user/Documents/KubeControl/node_modules/react-native/ReactCommon`)
+  - "RNCMaskedView (from `../node_modules/@react-native-community/masked-view`)"
+  - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - RNReanimated (from `../node_modules/react-native-reanimated`)
+  - RNScreens (from `../node_modules/react-native-screens`)
   - RNSVG (from `../node_modules/react-native-svg`)
   - Yoga (from `/Users/user/Documents/KubeControl/node_modules/react-native/ReactCommon/yoga`)
 
@@ -398,6 +413,8 @@ EXTERNAL SOURCES:
     :path: "/Users/user/Documents/KubeControl/node_modules/react-native/ReactCommon/jsiexecutor"
   React-jsinspector:
     :path: "/Users/user/Documents/KubeControl/node_modules/react-native/ReactCommon/jsinspector"
+  react-native-safe-area-context:
+    :path: "../node_modules/react-native-safe-area-context"
   React-RCTActionSheet:
     :path: "/Users/user/Documents/KubeControl/node_modules/react-native/Libraries/ActionSheetIOS"
   React-RCTAnimation:
@@ -418,6 +435,14 @@ EXTERNAL SOURCES:
     :path: "/Users/user/Documents/KubeControl/node_modules/react-native/Libraries/Vibration"
   ReactCommon:
     :path: "/Users/user/Documents/KubeControl/node_modules/react-native/ReactCommon"
+  RNCMaskedView:
+    :path: "../node_modules/@react-native-community/masked-view"
+  RNGestureHandler:
+    :path: "../node_modules/react-native-gesture-handler"
+  RNReanimated:
+    :path: "../node_modules/react-native-reanimated"
+  RNScreens:
+    :path: "../node_modules/react-native-screens"
   RNSVG:
     :path: "../node_modules/react-native-svg"
   Yoga:
@@ -450,6 +475,7 @@ SPEC CHECKSUMS:
   React-jsi: 87b6b899f6c81c29487d0416969c261b73f46a2d
   React-jsiexecutor: 0ca3a8a0a65f9eb9aec3273c4cf44f6d31277937
   React-jsinspector: 09b8cb3fefdf81b2889a13cc1a645e905e514ddb
+  react-native-safe-area-context: e200d4433aba6b7e60b52da5f37af11f7a0b0392
   React-RCTActionSheet: b6d2445d7317359997ed0c650421d0a0b9dd58cb
   React-RCTAnimation: 2f48bd93a4f5317cd5ab7189c6b5e469b60fb7bf
   React-RCTBlob: b8da9c90135ee183f3ad35b521313390370b5ed2
@@ -460,6 +486,10 @@ SPEC CHECKSUMS:
   React-RCTText: 32e3c891fa74b1b2544517e59ee5fbc96f672983
   React-RCTVibration: ab7fb7b10ca373d7e931b15e18b5f6d1663367ca
   ReactCommon: 14ae20c83bd846c1790e45ad95e0f0717dcd034f
+  RNCMaskedView: 5a8ec07677aa885546a0d98da336457e2bea557f
+  RNGestureHandler: 8f09cd560f8d533eb36da5a6c5a843af9f056b38
+  RNReanimated: 955cf4068714003d2f1a6e2bae3fb1118f359aff
+  RNScreens: cf198f915f8a2bf163de94ca9f5bfc8d326c3706
   RNSVG: ce9d996113475209013317e48b05c21ee988d42e
   Yoga: 5ffb724bde6d20a1828a1dc9a368085f404a1203
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
