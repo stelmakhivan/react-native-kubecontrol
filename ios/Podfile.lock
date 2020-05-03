@@ -296,6 +296,8 @@ PODS:
     - React-Core (= 0.63.0-rc.0)
     - React-cxxreact (= 0.63.0-rc.0)
     - React-jsi (= 0.63.0-rc.0)
+  - RNSVG (12.1.0):
+    - React
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -347,6 +349,7 @@ DEPENDENCIES:
   - React-RCTText (from `/Users/user/Documents/KubeControl/node_modules/react-native/Libraries/Text`)
   - React-RCTVibration (from `/Users/user/Documents/KubeControl/node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/turbomodule/core (from `/Users/user/Documents/KubeControl/node_modules/react-native/ReactCommon`)
+  - RNSVG (from `../node_modules/react-native-svg`)
   - Yoga (from `/Users/user/Documents/KubeControl/node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -415,6 +418,8 @@ EXTERNAL SOURCES:
     :path: "/Users/user/Documents/KubeControl/node_modules/react-native/Libraries/Vibration"
   ReactCommon:
     :path: "/Users/user/Documents/KubeControl/node_modules/react-native/ReactCommon"
+  RNSVG:
+    :path: "../node_modules/react-native-svg"
   Yoga:
     :path: "/Users/user/Documents/KubeControl/node_modules/react-native/ReactCommon/yoga"
 
@@ -455,9 +460,10 @@ SPEC CHECKSUMS:
   React-RCTText: 32e3c891fa74b1b2544517e59ee5fbc96f672983
   React-RCTVibration: ab7fb7b10ca373d7e931b15e18b5f6d1663367ca
   ReactCommon: 14ae20c83bd846c1790e45ad95e0f0717dcd034f
+  RNSVG: ce9d996113475209013317e48b05c21ee988d42e
   Yoga: 5ffb724bde6d20a1828a1dc9a368085f404a1203
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: a25c77aa6f377acf30764f9f722e77653fd653a4
+PODFILE CHECKSUM: b2ce80577922f47f404c45459de6599e64259422
 
 COCOAPODS: 1.7.5
