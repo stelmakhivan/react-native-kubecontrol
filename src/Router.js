@@ -4,6 +4,9 @@ import {Icon} from 'native-base';
 
 import Menu from './containers/Menu';
 import Profile from './containers/Profile';
+import LoginForm from './containers/LoginForm';
+import SignupForm from './containers/SignupForm';
+
 import Charts from './components/Charts';
 
 const RouterComponent = () => {
@@ -11,6 +14,9 @@ const RouterComponent = () => {
     <Router>
       <Overlay key="overlay">
         <Scene key="root">
+          <Scene key="login" hideNavBar title="Login" component={LoginForm} />
+          <Scene key="signup" title="Signup" component={SignupForm} />
+
           <Drawer
             contentComponent={Menu}
             hideNavBar
