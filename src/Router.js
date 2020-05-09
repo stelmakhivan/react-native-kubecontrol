@@ -2,6 +2,7 @@ import React from 'react';
 import {Scene, Router, Drawer, Overlay} from 'react-native-router-flux';
 import {Icon} from 'native-base';
 
+import Menu from './containers/Menu';
 import Charts from './components/Charts';
 
 const RouterComponent = () => {
@@ -10,6 +11,7 @@ const RouterComponent = () => {
       <Overlay key="overlay">
         <Scene key="root">
           <Drawer
+            contentComponent={Menu}
             hideNavBar
             drawerPosition="left"
             drawerWidth={300}
