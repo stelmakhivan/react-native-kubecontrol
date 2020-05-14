@@ -1,18 +1,26 @@
 import React, {Component} from 'react';
 import {View, StyleSheet} from 'react-native';
 import {Actions} from 'react-native-router-flux';
+import {connect} from 'react-redux';
+import * as actions from '../actions';
 
 import {Card, CardSection, Input, Button} from './common';
 
 class LoginForm extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      email: '',
-      password: '',
-      loading: null,
-    };
+  onEmailChange = (text) => {
+    this.props.emailChanged(text);
+  };
+
+  onPasswordChange = (text) => {
+    this.props.passwordChanged(text);
+  };
+
+  onButtonPress() {
+    const {email, password} = this.props;
+    Actions.signup();
+    // this.props.loginUser({email, password});
   }
+
   renderButtons = () => {
     return (
       <>
@@ -20,22 +28,10 @@ class LoginForm extends Component {
           <Button>Login</Button>
         </View>
         <View style={styles.buttonContainer}>
-          <Button onPress={Actions.signup}>Signup</Button>
+          <Button onPress={this.onButtonPress}>Signup</Button>
         </View>
       </>
     );
-  };
-
-  onEmailChange = (email) => {
-    this.setState({
-      email,
-    });
-  };
-
-  onPasswordChange = (password) => {
-    this.setState({
-      password,
-    });
   };
 
   render() {
@@ -44,7 +40,7 @@ class LoginForm extends Component {
         <Card>
           <CardSection>
             <Input
-              value={this.state.email}
+              value={this.props.email}
               onChangeText={this.onEmailChange}
               label="Email"
               placeholder={'email@email.com'}
@@ -52,7 +48,7 @@ class LoginForm extends Component {
           </CardSection>
           <CardSection>
             <Input
-              value={this.state.password}
+              value={this.props.password}
               onChangeText={this.onPasswordChange}
               label="Password"
               placeholder={'password'}
@@ -78,4 +74,15 @@ const styles = StyleSheet.create({
   },
 });
 
-export default LoginForm;
+const mapStateToProps = ({auth}) => {
+  const {email, password, loginError, loading} = auth;
+
+  return {email, password, loginError, loading};
+};
+
+const mapDispatchToProps = (dispatch) => ({
+  emailChanged: (text) => dispatch(actions.emailChanged(text)),
+  passwordChanged: (text) => dispatch(actions.passwordChanged(text)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(LoginForm);
