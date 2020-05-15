@@ -75,7 +75,13 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     height: 50,
-    margin: 4,
+    marginBottom: 5,
+  },
+  errorText: {
+    fontSize: 20,
+    alignSelf: 'center',
+    color: 'red',
+    marginBottom: 20,
   },
 });
 

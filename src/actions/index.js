@@ -48,3 +48,24 @@ export const signupUserSuccess = (dispatch, user) => {
 export const signupUserFail = (dispatch, error) => {
   dispatch({type: SIGNUP_USER_FAIL, error: error.message});
 };
+
+export const loginUser = ({email, password}) => {
+  return (dispatch) => {
+    dispatch({type: LOGIN_USER});
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(email, password)
+      .then((user) => loginUserSuccess(dispatch, user))
+      .catch((error) => loginUserFail(dispatch, error));
+  };
+};
+
+export const loginUserFail = (dispatch, error) => {
+  dispatch({type: LOGIN_USER_FAIL, error: error.message});
+};
+
+export const loginUserSuccess = (dispatch, user) => {
+  dispatch({type: LOGIN_USER_SUCCESS, payload: user});
+
+  Actions.main();
+};

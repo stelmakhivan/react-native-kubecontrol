@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, Text} from 'react-native';
 import {Actions} from 'react-native-router-flux';
 import {connect} from 'react-redux';
 import * as actions from '../actions';
@@ -17,21 +17,30 @@ class LoginForm extends Component {
 
   onButtonPress = () => {
     const {email, password} = this.props;
-    Actions.signup();
-    // this.props.loginUser({email, password});
+    this.props.loginUser({email, password});
   };
 
   renderButtons = () => {
     return (
       <>
         <View style={styles.buttonContainer}>
-          <Button>Login</Button>
+          <Button onPress={this.onButtonPress}>Login</Button>
         </View>
         <View style={styles.buttonContainer}>
-          <Button onPress={this.onButtonPress}>Signup</Button>
+          <Button onPress={Actions.signup}>Signup</Button>
         </View>
       </>
     );
+  };
+
+  renderError = () => {
+    if (this.props.loginError) {
+      return (
+        <View>
+          <Text style={styles.errorText}>{this.props.loginError}</Text>
+        </View>
+      );
+    }
   };
 
   render() {
@@ -55,6 +64,7 @@ class LoginForm extends Component {
               secureTextEntry
             />
           </CardSection>
+          {this.renderError()}
           {this.renderButtons()}
         </Card>
       </View>
@@ -70,7 +80,13 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     height: 50,
-    margin: 4,
+    margin: 5,
+  },
+  errorText: {
+    fontSize: 20,
+    alignSelf: 'center',
+    color: 'red',
+    marginBottom: 20,
   },
 });
 
@@ -83,6 +99,7 @@ const mapStateToProps = ({auth}) => {
 const mapDispatchToProps = (dispatch) => ({
   emailChanged: (text) => dispatch(actions.emailChanged(text)),
   passwordChanged: (text) => dispatch(actions.passwordChanged(text)),
+  loginUser: (email, password) => dispatch(actions.loginUser(email, password)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(LoginForm);
