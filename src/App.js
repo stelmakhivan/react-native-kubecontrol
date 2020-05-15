@@ -4,6 +4,8 @@ import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {Provider} from 'react-redux';
 import {store} from './configureStore';
 
+import './services/firebase/config';
+
 import RouterComponent from './Router';
 
 class App extends Component {

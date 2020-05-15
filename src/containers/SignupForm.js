@@ -1,31 +1,65 @@
 import React, {Component} from 'react';
-import {View, StyleSheet} from 'react-native';
-import {Actions} from 'react-native-router-flux';
+import {View, StyleSheet, Text} from 'react-native';
 
 import {Card, CardSection, Input, Button} from './common';
 
+import {connect} from 'react-redux';
+import * as actions from '../actions';
+
 class SignupForm extends Component {
+  onEmailChange = (text) => {
+    this.props.emailChanged(text);
+  };
+
+  onPasswordChange = (text) => {
+    this.props.passwordChanged(text);
+  };
+
+  onButtonPress = () => {
+    const {email, password} = this.props;
+    this.props.signupUser({email, password});
+  };
+
   renderButtons = () => {
     return (
       <View style={styles.buttonContainer}>
-        <Button onPress={Actions.login}>Login</Button>
+        <Button onPress={this.onButtonPress}>Login</Button>
       </View>
     );
   };
+
+  renderError() {
+    if (this.props.signupError) {
+      return (
+        <View>
+          <Text style={styles.errorText}>{this.props.signupError}</Text>
+        </View>
+      );
+    }
+  }
 
   render() {
     return (
       <View style={styles.container}>
         <Card>
           <CardSection>
-            <Input label="Company Name" placeholder={'Cool Company LLC'} />
+            <Input
+              value={this.props.email}
+              label="Email"
+              onChangeText={this.onEmailChange}
+              placeholder={'email@email.com'}
+            />
           </CardSection>
           <CardSection>
-            <Input label="Email" placeholder={'email@email.com'} />
+            <Input
+              value={this.props.password}
+              onChangeText={this.onPasswordChange}
+              label="Password"
+              placeholder="password"
+              secureTextEntry
+            />
           </CardSection>
-          <CardSection>
-            <Input label="Password" placeholder={'password'} secureTextEntry />
-          </CardSection>
+          {this.renderError()}
           {this.renderButtons()}
         </Card>
       </View>
@@ -45,4 +79,17 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SignupForm;
+const mapStateToProps = ({auth}) => {
+  const {email, password, signupError, loading} = auth;
+
+  return {email, password, signupError, loading};
+};
+
+const mapDispatchToProps = (dispatch) => ({
+  emailChanged: (text) => dispatch(actions.emailChanged(text)),
+  passwordChanged: (text) => dispatch(actions.passwordChanged(text)),
+  signupUser: (email, password) =>
+    dispatch(actions.signupUser(email, password)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(SignupForm);
