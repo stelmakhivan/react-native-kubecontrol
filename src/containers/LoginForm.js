@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, StyleSheet, Text} from 'react-native';
+import {View, StyleSheet, Text, Image} from 'react-native';
 import {Actions} from 'react-native-router-flux';
 import {connect} from 'react-redux';
 import * as actions from '../actions';
@@ -46,6 +46,10 @@ class LoginForm extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <Image
+          style={styles.logo}
+          source={require('../assets/images/kubernetesExpress.png')}
+        />
         <Card>
           <CardSection>
             <Input
@@ -87,6 +91,11 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     color: 'red',
     marginBottom: 20,
+  },
+  logo: {
+    height: 335,
+    width: 400,
+    alignSelf: 'center',
   },
 });
 

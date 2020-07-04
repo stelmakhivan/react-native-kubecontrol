@@ -194,7 +194,6 @@
 				106F866B8B3F4EEBD1055D1C /* Pods-KubeControl-tvOSTests.debug.xcconfig */,
 				00F5BCE128AB60628673A3BB /* Pods-KubeControl-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

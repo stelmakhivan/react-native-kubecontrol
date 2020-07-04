@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 import {Provider} from 'react-redux';
-import {store} from './configureStore';
+import {store, persistor} from './configureStore';
+import {PersistGate} from 'redux-persist/integration/react';
 
 import './services/firebase/config';
 
@@ -13,7 +14,9 @@ class App extends Component {
     return (
       <Provider store={store}>
         <SafeAreaProvider>
-          <RouterComponent />
+          <PersistGate persistor={persistor}>
+            <RouterComponent />
+          </PersistGate>
         </SafeAreaProvider>
       </Provider>
     );
