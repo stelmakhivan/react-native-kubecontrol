@@ -14,7 +14,10 @@ class Profile extends Component {
     this.props.apiEntry(text);
   };
 
-  onButtonPress = () => {};
+  onButtonPress = () => {
+    const {apiKey, url} = this.props;
+    this.props.fetchMetrics({apiKey, url});
+  };
 
   renderButton = () => {
     return (
@@ -75,6 +78,8 @@ const mapStateToProps = ({api}) => {
 const mapDispatchToProps = (dispatch) => ({
   apiEntry: (text) => dispatch(actions.apiEntry(text)),
   urlEntry: (text) => dispatch(actions.urlEntry(text)),
+  fetchMetrics: ({apiKey, url}) =>
+    dispatch(actions.fetchMetrics({apiKey, url})),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Profile);
