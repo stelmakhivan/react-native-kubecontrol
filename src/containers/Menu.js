@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Text, Image, StyleSheet, View} from 'react-native';
+import {Text, StyleSheet, View} from 'react-native';
 import {List, ListItem} from 'native-base';
 import SafeAreaView from 'react-native-safe-area-view';
 import {Actions} from 'react-native-router-flux';

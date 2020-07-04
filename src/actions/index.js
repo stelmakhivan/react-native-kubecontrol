@@ -95,8 +95,8 @@ export const fetchMetricsFail = (dispatch) => {
   dispatch({type: FETCH_METRICS_FAIL});
 };
 
-export const fetchMetricsSuccess = (dispatch) => {
-  dispatch({type: FETCH_METRICS_SUCCESS});
+export const fetchMetricsSuccess = (dispatch, data) => {
+  dispatch({type: FETCH_METRICS_SUCCESS, payload: data});
 };
 
 export const fetchMetrics = ({apiKey, url}) => {
