@@ -21,6 +21,9 @@ class Menu extends Component {
             <ListItem onPress={Actions.profile}>
               <Text>Profile</Text>
             </ListItem>
+            <ListItem onPress={() => Actions.reset('login')}>
+              <Text>Logout</Text>
+            </ListItem>
           </List>
         </View>
       </View>
