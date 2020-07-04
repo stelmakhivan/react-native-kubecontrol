@@ -20,6 +20,7 @@
 		63B6783CF8F70D157EC6B53D /* libPods-KubeControl-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86782B8A81E1B6AACB6057BB /* libPods-KubeControl-tvOSTests.a */; };
 		6F33742E11A3E1734B811D49 /* libPods-KubeControl-KubeControlTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DD481EE693A80A4D9377DC /* libPods-KubeControl-KubeControlTests.a */; };
 		710F4B7645C090101AAAE57F /* libPods-KubeControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB37A6C6DAB9DAC1C6C24EA9 /* libPods-KubeControl.a */; };
+		CEDE385824B0B2A200B2C9E5 /* BlackOpsOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEDE385724B0B2A200B2C9E5 /* BlackOpsOne-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		86782B8A81E1B6AACB6057BB /* libPods-KubeControl-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KubeControl-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AABD9FC040121B07E22429D0 /* Pods-KubeControl-KubeControlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubeControl-KubeControlTests.release.xcconfig"; path = "Target Support Files/Pods-KubeControl-KubeControlTests/Pods-KubeControl-KubeControlTests.release.xcconfig"; sourceTree = "<group>"; };
 		BB37A6C6DAB9DAC1C6C24EA9 /* libPods-KubeControl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KubeControl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDE385724B0B2A200B2C9E5 /* BlackOpsOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BlackOpsOne-Regular.ttf"; path = "../src/assets/fonts/BlackOpsOne-Regular.ttf"; sourceTree = "<group>"; };
 		E03F688E25D40FAF776437D9 /* Pods-KubeControl-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubeControl-tvOS.release.xcconfig"; path = "Target Support Files/Pods-KubeControl-tvOS/Pods-KubeControl-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		E0BEA26733F1CAE50A466F93 /* Pods-KubeControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubeControl.debug.xcconfig"; path = "Target Support Files/Pods-KubeControl/Pods-KubeControl.debug.xcconfig"; sourceTree = "<group>"; };
 		EAA9613628F6259D17CC9160 /* Pods-KubeControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KubeControl.release.xcconfig"; path = "Target Support Files/Pods-KubeControl/Pods-KubeControl.release.xcconfig"; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				CEDE385724B0B2A200B2C9E5 /* BlackOpsOne-Regular.ttf */,
 				13B07FAE1A68108700A75B9A /* KubeControl */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* KubeControlTests */,
@@ -341,6 +344,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				CEDE385824B0B2A200B2C9E5 /* BlackOpsOne-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
