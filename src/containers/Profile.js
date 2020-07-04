@@ -1,23 +1,52 @@
 import React, {Component} from 'react';
-import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
+import {View, StyleSheet} from 'react-native';
+import * as actions from '../actions';
+import {connect} from 'react-redux';
 
-import {Card, Input, CardSection} from './common';
+import {Card, Input, CardSection, Button} from './common';
 
 class Profile extends Component {
+  onUrlChange = (text) => {
+    this.props.urlEntry(text);
+  };
+
+  onAPIChange = (text) => {
+    this.props.apiEntry(text);
+  };
+
+  onButtonPress = () => {};
+
+  renderButton = () => {
+    return (
+      <View style={styles.btnContainer}>
+        <Button onPress={this.onButtonPress}>Fetch Metrics</Button>
+      </View>
+    );
+  };
+
   render() {
     return (
       <View style={styles.container}>
         <Card>
           <CardSection>
-            <Input placeholder="type here" />
+            <Input
+              label="Grafana Url"
+              secureTextEntry
+              placeholder="Grafana Url"
+              value={this.props.url}
+              onChangeText={this.onUrlChange}
+            />
           </CardSection>
           <CardSection>
-            <Input placeholder="type here" />
+            <Input
+              label="API Key"
+              placeholder="API Key"
+              secureTextEntry
+              value={this.props.apiKey}
+              onChangeText={this.onAPIChange}
+            />
           </CardSection>
-
-          <TouchableOpacity style={styles.button}>
-            <Text style={styles.text}>Submit</Text>
-          </TouchableOpacity>
+          {this.renderButton()}
         </Card>
       </View>
     );
@@ -31,22 +60,21 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
   },
 
-  button: {
-    alignSelf: 'stretch',
-    backgroundColor: '#fff',
-    borderRadius: 20,
-    borderWidth: 1,
-    borderColor: '#008BAA',
-    marginLeft: 5,
-    marginRight: 5,
-  },
-  text: {
-    alignSelf: 'center',
-    color: '#008BAA',
-    fontSize: 16,
-    fontWeight: '600',
-    paddingVertical: 10,
+  btnContainer: {
+    height: 50,
+    marginBottom: 4,
   },
 });
 
-export default Profile;
+const mapStateToProps = ({api}) => {
+  const {loading, apiKey, url} = api;
+
+  return {loading, apiKey, url};
+};
+
+const mapDispatchToProps = (dispatch) => ({
+  apiEntry: (text) => dispatch(actions.apiEntry(text)),
+  urlEntry: (text) => dispatch(actions.urlEntry(text)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Profile);
