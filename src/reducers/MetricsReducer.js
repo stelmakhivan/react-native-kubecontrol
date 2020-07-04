@@ -22,6 +22,12 @@ export default (state = INITIAL_STATE, action) => {
     case FETCH_METRICS_SUCCESS:
       return {
         ...state,
+        cpuUsage: action.payload[0],
+        memUsage: action.payload[1],
+        networkTraffic: action.payload[2],
+        saturation: action.payload[3],
+        isLoading: false,
+        isLoggedIn: true,
       };
     default:
       return state;
